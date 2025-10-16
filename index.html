@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Multi-Number Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Simple Multi-Number Calculator</h1>
+<form id="calculator">
+  <label for="numbers">Enter numbers (comma separated):</label><br>
+  <input type="text" id="numbers" name="numbers" placeholder="e.g., 1, 2, 3, 4"><br><br>
+  <label for="operation">Select operation:</label><br>
+  <select id="operation" name="operation">
+    <option value="add">Addition (+)</option>
+    <option value="subtract">Subtraction (-)</option>
+    <option value="multiply">Multiplication (×)</option>
+    <option value="divide">Division (÷)</option>
+  </select><br><br>
+  <button type="button" onclick="calculate()">Calculate</button>
+</form>
+<h2>Result: <span id="result">--</span></h2>
+<script src="script.js"></script>
+</body>
+</html>
